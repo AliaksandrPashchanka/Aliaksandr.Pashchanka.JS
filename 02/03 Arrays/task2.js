@@ -21,7 +21,7 @@ for (var i = 0; i < n; i++) {
 	}
 }
 
-document.write("Исходный массив :</br>")
+document.write("Исходный массив :</br>");
 for (var i = 0; i < n; i++) {
 	for (var j = 0; j < m; j++) {
 		if ((arr[i][j]) > 0 && (arr[i][j] >= 10) || ((arr[i][j] > -10) && (arr[i][j] < 0)))
@@ -45,7 +45,7 @@ for (var i= 0; i < n; i++){
 }
 
 
-document.write("Массив после изменений :</br>")
+document.write("Массив после изменений :</br>");
 for (var i = 0; i < n; i++) {
 	for (var j = 0; j < m; j++) {
 		if ((arr[i][j]) > 0 && (arr[i][j] >= 10) || ((arr[i][j] > -10) && (arr[i][j] < 0)))
