@@ -2,7 +2,7 @@ var A = +prompt("Введите число А : " , "1.1"),
 	B = +prompt("Введите число B, которое больше A : " , "3"),
 	sum = 0;
 document.write("Все нечётные числа расположенные между A и B :")
-for (var i = (i - (i % 1)) + 1; i < B; i++) {
+for (var i = (A - (A % 1)) + 1; i < B; i++) {
 	if ((i % 2)) document.write(" " + i);
 	sum += i;
 }
