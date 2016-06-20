@@ -15,8 +15,12 @@ function getMinOfArray(numArray) {
 
 
 var arrayLength = +prompt("Введите размер массива : ", "10"),
-	arr = new Array(arrayLength),
 	sumOfArray = 0;
+
+if ((arrayLength <= 0) || (isNaN(arrayLength)))
+	arrayLength = 15;
+
+var arr = new Array(arrayLength);
 
 for (var i = 0; i < arr.length; i++)
 	arr[i] = getRandomInt(100);

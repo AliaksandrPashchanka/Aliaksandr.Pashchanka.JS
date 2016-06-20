@@ -8,6 +8,13 @@
 var A = +prompt("Введите число А : " , "1.1"),
 	B = +prompt("Введите число B, которое больше A : " , "3"),
 	sum = 0;
+
+if ((A <= 0) || (isNaN(A)))
+	A = 1;
+
+if ((B <= 0) || (isNaN(B)))
+	B = 15;
+
 document.write("Все нечётные числа расположенные между A и B :");
 for (var i = (A - (A % 1)) + 1; i < B; i++) {
 	if ((i % 2)) document.write(" " + i);

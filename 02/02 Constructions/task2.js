@@ -4,8 +4,8 @@
 */
 var n = +prompt("Введите количество товаров : ","10"),
 	numberOfCombinations = 1;
-if (numberOfCombinations < 1)
-	numberOfCombinations = 1;
+if ((n < 1) || (isNaN(n)))
+	n = 5;
 do {
 	numberOfCombinations = numberOfCombinations * n;
 	n -= 1;
