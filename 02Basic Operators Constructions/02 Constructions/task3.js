@@ -7,7 +7,7 @@ Task 3
 · Ромб. 
 */
 var a = +prompt("Введите любое целое число : " , "10");
-if ((a < 3) || (a > 30) || (isNaN(a)))
+if ((a < 3) || (a > 100) || (isNaN(a)))
 	a = 5;
 var	b = a * 2;
 
@@ -44,8 +44,8 @@ for (var i =2; i <= a; i++) {
 	document.write("*");
 	document.write("</br>");
 }
-for (var i = 1; i <= b; i++) {
-	document.write("*");
+for (var i = 1; i <= a+1; i++) {
+	document.write("*&nbsp&nbsp");
 }
 
 

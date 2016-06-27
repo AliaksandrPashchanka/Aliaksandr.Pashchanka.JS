@@ -4,11 +4,12 @@
 */
 var n = +prompt("Введите количество товаров : ","10"),
 	numberOfCombinations = 1;
-if ((n < 1) || (isNaN(n)))
-	n = 5;
+while ((n < 0) || (isNaN(n))) {
+	n = +prompt("Введённое количество товаров неверно. Введите количество товаров : ","10");
+}
 do {
-	numberOfCombinations = numberOfCombinations * n;
-	n -= 1;
+	numberOfCombinations *= n;
+	n --;
 }
 while ( n > 0);
 document.write("Количество различных вариантов доставки товара равно : " + numberOfCombinations);

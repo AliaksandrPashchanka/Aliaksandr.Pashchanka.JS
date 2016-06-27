@@ -17,6 +17,6 @@ if ((h < 0) || (isNaN(h)))
 	h = 15;
 
 V = 2 * r * h * Math.PI;
-S = V + 2 * 2 * Math.PI * r;
+S = 2*Math.PI * r * (r+ h);
 document.write("Объём цилиндра равен : " + V + "</br>");
 document.write("Площадь цилиндра равна : " + S + "</br>");
